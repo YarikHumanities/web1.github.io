@@ -8,4 +8,6 @@ module.exports = {
     ecmaVersion: 12,
   },
   rules: {},
+  plugins: ['sonarjs'],
+  extends: ['plugin:sonarjs/recommended'],
 };
