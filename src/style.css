@@ -11,12 +11,13 @@
 }
 
 .container {
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 20% 10% 50% 20%;
-    grid-template-areas:'header header header'
+  margin: 0;
+  display: grid;
+  min-height: 100vh;
+  width: 100%;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 100px 100px minmax(calc(100vh - 400px), min-content) 200px;
+  grid-template-areas:'header header header'
                         'left_aside navigation navigation'
                         'left_aside main right_aside'
                         'footer footer footer'                    
@@ -90,6 +91,7 @@ body {
 }
 
 header {
+  overflow: hidden;
   background-color: var(--header_bg_color);
   grid-area: header;
 }
@@ -149,4 +151,5 @@ menu {
 footer {
   background-color: var(--footer_bg_color);
   grid-area: footer;
+  overflow: hidden;
 }
