@@ -2,12 +2,12 @@
   --main_text_color: white;
   --additional_text_color: wheat;
   --list_text_size: 30px;
-  --footer_bg_color: #1E3C61;
-  --main_bg_color: #478EE6;
-  --right_aside_bg_color: #014DAD;
-  --left_aside_bg_color: #0266E0;
+  --footer_bg_color: #1e3c61;
+  --main_bg_color: #478ee6;
+  --right_aside_bg_color: #014dad;
+  --left_aside_bg_color: #0266e0;
   --nav_bg_color: #a1b5ce;
-  --header_bg_color: #012C61;
+  --header_bg_color: #012c61;
 }
 
 .container {
@@ -17,14 +17,15 @@
   width: 100%;
   grid-template-columns: 25% 50% 25%;
   grid-template-rows: 100px 100px minmax(calc(100vh - 400px), min-content) 200px;
-  grid-template-areas:'header header header'
-                        'left_aside navigation navigation'
-                        'left_aside main right_aside'
-                        'footer footer footer'                    
+  grid-template-areas:
+    'header header header'
+    'left_aside navigation navigation'
+    'left_aside main right_aside'
+    'footer footer footer';
 }
 
 body {
-  margin: 0px!important;
+  margin: 0 !important;
 }
 
 .index_text {
@@ -54,21 +55,16 @@ body {
   text-indent: 20px;
 }
 
-.products_main_text {
+main p {
   font-size: 50px;
   color: var(--main_text_color);
   margin: 10px;
 }
 
 .contacts_gen_text {
-  color: var(--main_text_color); 
+  color: var(--main_text_color);
   margin: 10px;
   font-size: 25px;
-}
-
-.about_left_aside_text {
-  text-indent: 20px;
-  color: var(--main_text_color);
 }
 
 .about_right_aside_text {
@@ -76,7 +72,7 @@ body {
   margin: 5px;
 }
 
-.product_list {
+.left_aside ul {
   font-size: var(--list_text_size);
   list-style-type: none;
   color: var(--additional_text_color);
@@ -99,26 +95,31 @@ header {
 nav {
   background-color: var(--nav_bg_color);
   grid-area: navigation;
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 70px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.navigation_link {
+nav a {
   margin: 12px;
   font-size: 50px;
   text-decoration: none;
 }
 
-.navigation_link:hover {
+nav a:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
-  }
+}
 
 .left_aside {
   background-color: var(--left_aside_bg_color);
+  display: flex;
+  flex-direction: column;
   grid-area: left_aside;
+}
+
+.left_aside p {
+  color: #fff;
 }
 
 .right_aside {
@@ -152,4 +153,8 @@ footer {
   background-color: var(--footer_bg_color);
   grid-area: footer;
   overflow: hidden;
+}
+
+footer h2 {
+  text-align: right;
 }

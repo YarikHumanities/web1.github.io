@@ -1,5 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
-#npm run format
-#npm test
-#npm run stylelint
+npm run eslint:check
+npm run format:check
+npm run stylelint:check
