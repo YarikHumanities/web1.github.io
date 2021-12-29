@@ -35,13 +35,14 @@ body {
   text-indent: 20px;
 }
 
-.footer_text {
+footer p {
   color: var(--additional_text_color);
   margin: 5px;
   margin-top: 15px;
+  font-size: large;
 }
 
-.right_aside_text {
+.right_aside p {
   font-size: 600%;
   color: var(--main_text_color);
   margin: 20px;
