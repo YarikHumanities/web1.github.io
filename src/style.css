@@ -42,6 +42,12 @@ footer p {
   font-size: large;
 }
 
+main p {
+  font-size: 50px;
+  color: var(--main_text_color);
+  margin: 10px;
+}
+
 .right_aside p {
   font-size: 600%;
   color: var(--main_text_color);
@@ -56,21 +62,16 @@ footer p {
   text-indent: 20px;
 }
 
-main p {
-  font-size: 50px;
-  color: var(--main_text_color);
-  margin: 10px;
-}
-
 .contacts_gen_text {
   color: var(--main_text_color);
   margin: 10px;
   font-size: 25px;
 }
 
-.about_right_aside_text {
+.right_aside .ptext {
   color: var(--main_text_color);
   margin: 5px;
+  font-size: xx-large;
 }
 
 .left_aside ul {
