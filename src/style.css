@@ -55,7 +55,7 @@ main p {
   margin-top: 120px;
 }
 
-.left_aside_text {
+.left_aside p {
   color: var(--main_text_color);
   margin: 5px;
   margin-top: 50px;
@@ -118,10 +118,6 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   grid-area: left_aside;
-}
-
-.left_aside p {
-  color: #fff;
 }
 
 .right_aside {
