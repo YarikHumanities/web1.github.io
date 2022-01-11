@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
     <div class="container">
-        
-        <header class="header">
-<h1 style="color:white" class="logos">'Logo1'</h1>
-        </header>
+      <header>
+        <h1 class="logos">'Logo1'</h1>
+      </header>
 
-        <nav class="navigation">
-            <a class="navigation_link" href="index.html">Home</a>
-            <a class="navigation_link" href="products.html">Products</a>
-            <a class="navigation_link" href="gallery.html">Gallery</a>
-            <a class="navigation_link" href="about.html">About</a>
-            <a class="navigation_link" href="contacts.html">Contacts</a>
-        </nav>
-        <aside class="left_aside">
-<p style="color: white; margin: 10px; font-size: 25px;">OUR CONTACTS</p>
-<ul class="contact_list">
-    <li>Address</li>
-    <li>Rhone</li>
-    <li>E-mail</li>
-    <li>Telegram</li>
-</ul>
-        </aside>
-        <aside class="right_aside">
-<p style="color: white; margin: 10px; font-size: 25px;">WE ON MAP</p>
-        </aside>
-        <main class="main">
-
-            <map name="imagemap">
-                <area shape="circle" coords="60,400,500,400" href="https://youtu.be/dQw4w9WgXcQ"/>
-            </map>
-<center><img src="cursor-png-1146.png" alt="cursor" width="350" height="350" usemap="#imagemap"></center>
-            
-
-        </main>
-        <footer class="footer">
-<h2 align="right" style="color:white" class="logos">'Logo2'</h2>
-        </footer>
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/src/products.html">Products</a>
+        <a href="/src/gallery.html">Gallery</a>
+        <a href="/src/about.html">About</a>
+        <a href="/src/contacts.html">Contacts</a>
+      </nav>
+      <aside class="left_aside" aria-label="ourcontacts">
+        <p class="contacts_gen_text">OUR CONTACTS</p>
+        <ul class="contact_list">
+          <li>Address</li>
+          <li>Rhone</li>
+          <li>E-mail</li>
+          <li>Telegram</li>
+        </ul>
+      </aside>
+      <aside class="right_aside" aria-label="weonmap">
+        <p class="contacts_gen_text">WE ON MAP</p>
+      </aside>
+      <main>
+        <map name="imagemap">
+          <area
+            shape="circle"
+            coords="60,400,500,400"
+            href="https://youtu.be/dQw4w9WgXcQ"
+            alt="map"
+          />
+        </map>
+        <img
+          src="/src/images/cursor-png-1146.png"
+          alt="cursor"
+          width="350"
+          height="350"
+          usemap="#imagemap"
+        />
+      </main>
+      <footer>
+        <h2 class="logos">'Logo2'</h2>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
